@@ -1,6 +1,6 @@
 from Components.Component import Background
 from Controller.helpers import draw_text 
-import pygame
+import pygame, json, math
 
 class System:
     def __init__(self, world) -> None:
@@ -57,36 +57,15 @@ class MouseCollisionSystem(System):
         localEntities = self.world.state_stack[-1].localEntities
         # print(localEntities)
         
-        for enitity in localEntities:
-            mousePos = pygame.mouse.get_pos()
-            # print(localEntities[enitity])
-            if localEntities[enitity].hasComponent('Intersecting'):                
-                rect = localEntities[enitity].getComponent('Rect').value
-                if rect.collidepoint(mousePos):                
-                    localEntities[enitity].updateComponent('Colour','red')
+        for entity in localEntities:
+            mousePos = pygame.mouse.get_pos()            
+            if entity.hasComponent('Intersecting'):                           
+                rect = entity.getComponent('Rect').value                
+                if rect.collidepoint(mousePos):  
+                     entity.updateComponent('Intersecting', True)                               
                 else:
-                    localEntities[enitity].updateComponent('Colour',(0,0,0))
-                           
-
-
-    # loop over entities if they have rects, if so trigger a colliding component mutation
-    # def executeOLD(self, entity):
-    #     mousePos = pygame.mouse.get_pos()     
-    #     entityRect = entity.getComponent('Rect')   
-        
-    #     if(entityRect.collidepoint(mousePos)):
-    #         entity.addComponent('Background') 
-    #         entity['Background'].colour = (255,0, 255)
-                      
-            # if(leftMouseButton):                         
-            #     self.pressed = True
-            # else:
-            #     if self.pressed == True:
-            #         print('click')
-            #         self.pressed = False                                                              
-        # else:
-        #     entity.removeComponent('Background')            
-
+                    entity.updateComponent('Intersecting', False) 
+               
 class TextDrawSystem(System):
     def __init__(self, world) -> None:
         super().__init__(world)

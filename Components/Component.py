@@ -51,12 +51,69 @@ class Font(Component):
 class Rect(Component):
     def __init__(self, pos, dimensions) -> None:
         super().__init__()
-        self.value = pygame.Rect(pos, dimensions)         
+        self.value = pygame.Rect(pos, dimensions)  
 
-class Intersecting:
+class Surface(Component):
+    def __init__(self, dimensions = (0,0)) -> None:
+        super().__init__()   
+        self.value = dimensions 
+
+class Intersecting(Component):
     def __init__(self, value = False) -> None:
         super().__init__()
         self.value = value
+
+class Filename(Component):
+    def __init__(self, value) -> None:
+        super().__init__()
+        self.value = value
+
+class AnimationState(Component):
+    def __init__(self, value = 'idle') -> None:
+        super().__init__()
+        self.value = value
+
+class Animations(Component):
+    def __init__(self, value = {}) -> None:
+        super().__init__()
+        self.value = value
+
+class Image(Component):
+    def __init__(self, value = '') -> None:
+        super().__init__()
+        self.value = pygame.image.load(value).convert()
+
+class ActiveFrame(Component):
+    def __init__(self, value = 0) -> None:
+        super().__init__()
+        self.value = value
+
+class Data(Component):
+    def __init__(self, value = {}) -> None:
+        super().__init__()
+        self.value = value
+
+class Frames(Component):
+    def __init__(self, value = []) -> None:
+            super().__init__()
+            self.value = value
+
+class FrameRate(Component):
+    def __init__(self, value = 0.01) -> None:
+            super().__init__()
+            self.value = value
+
+
+# class Sprite(Component):
+#     def __init__(self, filename) -> None:
+#         super().__init__()        
+#         self.filename = filename
+#         self.sprite_sheet = pygame.image.load(self.filename).convert()
+#         self.activeFrame = 0
+#         self.animationState = 'idle'        
+#         self.data = [],        
+#         self.animations = []        
+#         self.frames = []      
 
 componentDict = {
     "Position":Position,
@@ -66,7 +123,16 @@ componentDict = {
     "Dimensions": Dimensions,
     "Text": Text,
     "Font": Font,
-    "Intersecting": Intersecting
+    "Intersecting": Intersecting,
+    "Surface": Surface,
+    "Filename":Filename,
+    "Animations": Animations,
+    "AnimationState": AnimationState,
+    "Image": Image,
+    "ActiveFrame": ActiveFrame,
+    "Data": Data,
+    "Frames" : Frames,
+    "FrameRate": FrameRate
 }
 
 colourDict = {

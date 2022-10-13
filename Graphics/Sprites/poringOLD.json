@@ -1,0 +1,24 @@
+{
+    "frames":[
+        {
+            "frame":{"x": 0, "y": 0, "w": 41, "h": 39},
+            "sourceImage": {"x": 0, "y": 0, "w": 41, "h": 39},
+            "sourceScale": {"w": 41, "h": 39}
+        },
+        {
+            "frame":{"x": 41, "y": 0, "w": 41, "h": 39},
+            "sourceImage": {"x": 41, "y": 0, "w": 41, "h": 39},
+            "sourceScale": {"w": 41, "h": 39}
+        },
+        {
+            "frame":{"x": 0, "y": 39, "w": 41, "h": 39},
+            "sourceImage": {"x": 0, "y": 0, "w": 41, "h": 39},
+            "sourceScale": {"w": 41, "h": 39}
+        },
+        {
+            "frame":{"x": 41, "y": 39, "w": 41, "h": 39},
+            "sourceImage": {"x": 0, "y": 0, "w": 41, "h": 39},
+            "sourceScale": {"w": 41, "h": 39}
+        }        
+    ]
+}

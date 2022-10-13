@@ -8,14 +8,20 @@ class Entity:
     def addComponent2(self, key, arguments):    
         self.components.update({key: componentDict[key](*arguments)})
 
-    def addComponents(self, components):
-        for component in components:
+    def addComponents(self, components=[]):
+        for component in components:   
+            print(component)
+            # if len(component[1]) == 0:
+            #     self.components.update({component[0]: componentDict[component[0]](*component[1])})
+                
+                # print('empty')
+            # else:
             self.components.update({component[0]: componentDict[component[0]](*component[1])})                
 
     def addComponent(self, component):        
         self.components.append(component)
     
-    def updateComponent(self, component, newValue):        
+    def updateComponent(self, component, newValue):              
         self.components[component].setValue(newValue)
         
     def removeComponents(self, key):
@@ -40,11 +46,32 @@ class Entity:
                     return self.components[name]                
             except KeyError:
                 return False
+    
+    def getComponentValue(self, name):
+        # for component in self.components: 
+            try:
+                if self.components[name]:                    
+                    return self.components[name].value               
+            except KeyError:
+                print('Key not in object')
+                return False
 
 class Archtype(Entity):
     def __init__(self) -> None:
         super().__init__()        
 
+class Sprite(Archtype):
+    def __init__(self) -> None:
+        super().__init__()
+        self.addComponents(
+            ('Position', []),
+            ('Intersecting', []),
+            ('Surface',[]),
+            ('Animations',[]),
+            ('AnimationState',[]),
+            ('ActiveFrame',[]),
+            ('JSONData',[]),     
+        )
 # class Button(Archtype):
 #     def __init__(self) -> None:
 #         super().__init__()
