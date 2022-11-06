@@ -63,15 +63,21 @@ class Archtype(Entity):
 class Sprite(Archtype):
     def __init__(self) -> None:
         super().__init__()
-        self.addComponents(
+        self.addComponents([
             ('Position', []),
+            ('Rect',[]),
             ('Intersecting', []),
             ('Surface',[]),
             ('Animations',[]),
+            ('Frames',[]),
             ('AnimationState',[]),
             ('ActiveFrame',[]),
-            ('JSONData',[]),     
-        )
+            ('FrameRate',[]),
+            ('Data',[]),  
+            ('Image',[]),            
+            ('Filename', [])       
+        ])
+
 # class Button(Archtype):
 #     def __init__(self) -> None:
 #         super().__init__()

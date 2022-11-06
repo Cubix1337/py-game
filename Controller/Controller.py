@@ -43,7 +43,7 @@ class World:
         self.load_initial_state()  
 
         # Controller Systems
-        self.addSystem(TextDrawSystem(self))      
+        self.addSystem(TextDrawSystem(self))    
 
     def load_assets(self):
         # pointers

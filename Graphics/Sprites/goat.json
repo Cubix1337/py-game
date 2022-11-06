@@ -1,44 +1,155 @@
 {
-    "frames":[
-        {
-            "frame":{"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceImage": {"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 90, "y": 0, "w": 90, "h": 90},
-            "sourceImage": {"x": 90, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 180, "y": 0, "w": 90, "h": 90},
-            "sourceImage": {"x": 90, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 0, "y": 90, "w": 90, "h": 90},
-            "sourceImage": {"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 90, "y": 90, "w": 90, "h": 90},
-            "sourceImage": {"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 180, "y": 90, "w": 90, "h": 90},
-            "sourceImage": {"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 0, "y": 180, "w": 90, "h": 90},
-            "sourceImage": {"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        },
-        {
-            "frame":{"x": 90, "y": 180, "w": 90, "h": 90},
-            "sourceImage": {"x": 0, "y": 0, "w": 90, "h": 90},
-            "sourceScale": {"w": 90, "h": 90}
-        }                  
-    ]
+    "color_key": 0,
+    "animations": {
+        "idle": {
+            "frameRate": 0.025,
+            "runs": "loop",
+            "frames": [
+                {
+                    "frame": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 90,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 90,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 180,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 90,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 0,
+                        "y": 90,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 90,
+                        "y": 90,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 180,
+                        "y": 90,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 0,
+                        "y": 180,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 90,
+                        "y": 180,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 90,
+                        "h": 90
+                    },
+                    "sourceScale": {
+                        "w": 90,
+                        "h": 90
+                    }
+                }
+            ]
+        }
+    }
 }

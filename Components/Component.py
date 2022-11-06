@@ -49,7 +49,7 @@ class Font(Component):
         self.value = value
 
 class Rect(Component):
-    def __init__(self, pos, dimensions) -> None:
+    def __init__(self, pos=(0,0), dimensions=(0,0)) -> None:
         super().__init__()
         self.value = pygame.Rect(pos, dimensions)  
 
@@ -79,9 +79,9 @@ class Animations(Component):
         self.value = value
 
 class Image(Component):
-    def __init__(self, value = '') -> None:
+    def __init__(self, value = {}) -> None:
         super().__init__()
-        self.value = pygame.image.load(value).convert()
+        self.value = value
 
 class ActiveFrame(Component):
     def __init__(self, value = 0) -> None:
@@ -101,19 +101,7 @@ class Frames(Component):
 class FrameRate(Component):
     def __init__(self, value = 0.01) -> None:
             super().__init__()
-            self.value = value
-
-
-# class Sprite(Component):
-#     def __init__(self, filename) -> None:
-#         super().__init__()        
-#         self.filename = filename
-#         self.sprite_sheet = pygame.image.load(self.filename).convert()
-#         self.activeFrame = 0
-#         self.animationState = 'idle'        
-#         self.data = [],        
-#         self.animations = []        
-#         self.frames = []      
+            self.value = value    
 
 componentDict = {
     "Position":Position,
@@ -132,7 +120,7 @@ componentDict = {
     "ActiveFrame": ActiveFrame,
     "Data": Data,
     "Frames" : Frames,
-    "FrameRate": FrameRate
+    "FrameRate": FrameRate   
 }
 
 colourDict = {

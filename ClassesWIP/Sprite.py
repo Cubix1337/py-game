@@ -58,23 +58,3 @@ class Sprite:
     
     def getActiveFrame(self):
         return self.frames[math.floor(self.activeFrame)]
-
-    # def getSprite(self, x, y, w, h):        
-    #     sprite = pygame.Surface((w, h))
-    #     sprite.set_colorkey((0, 0, 0,))
-    #     sprite.blit(self.sprite_sheet, (0, 0), (x, y, w, h))        
-    #     return sprite
-    
-    # def parseSprite(self, frame):
-    #     sprite = self.data['frames'][frame]["frame"]
-    #     x, y, w, h = sprite["x"], sprite["y"], sprite["w"], sprite["h"]
-    #     image = self.getSprite(x, y, w, h)
-    #     return image
-    
-    # def setFrames(self, animationState):
-    #     for i in self.frameCount:
-    #         self.frames.append(self.parseSprite(i))
-
-    # def setAllFrames(self, animationState):
-    #     for i in self.frameCount:
-    #         self.frames.append(self.parseSprite(i))                    

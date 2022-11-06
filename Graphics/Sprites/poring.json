@@ -1,4 +1,5 @@
 {
+    "color_key": 255,
     "animations": {
         "idle": {
             "frameRate": 0.025,
@@ -78,27 +79,126 @@
                 }
             ]
         },
-        "walking": [],
-        "hit": [
-            {
-                "frame": {
-                    "x": 55,
-                    "y": 200,
-                    "w": 60,
-                    "h": 60
+        "walking": {
+            "frameRate": 0.025,
+            "runs":"loop",
+            "frames": [
+                {
+                    "frame": {
+                        "x": 0,
+                        "y": 60,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceScale": {
+                        "w": 60,
+                        "h": 60
+                    }
                 },
-                "sourceImage": {
-                    "x": 0,
-                    "y": 0,
-                    "w": 60,
-                    "h": 60
+                {
+                    "frame": {
+                        "x": 60,
+                        "y": 60,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceScale": {
+                        "w": 60,
+                        "h": 60
+                    }
                 },
-                "sourceScale": {
-                    "w": 60,
-                    "h": 60
+                {
+                    "frame": {
+                        "x": 120,
+                        "y": 60,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceScale": {
+                        "w": 60,
+                        "h": 60
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 180,
+                        "y": 60,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceScale": {
+                        "w": 60,
+                        "h": 60
+                    }
                 }
-            }
-        ],
+            ]
+        },
+        "hit":{
+            "frameRate": 0.025,
+            "runs": "loop",
+            "frames": [
+                {
+                    "frame": {
+                        "x": 0,
+                        "y": 300,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceScale": {
+                        "w": 60,
+                        "h": 60
+                    }
+                },
+                {
+                    "frame": {
+                        "x": 60,
+                        "y": 300,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceImage": {
+                        "x": 0,
+                        "y": 0,
+                        "w": 60,
+                        "h": 60
+                    },
+                    "sourceScale": {
+                        "w": 60,
+                        "h": 60
+                    }
+                }
+            ]
+        },
         "die": {
             "runs": "once",
             "frameRate": 0.05,
