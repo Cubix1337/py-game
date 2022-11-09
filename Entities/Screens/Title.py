@@ -76,7 +76,9 @@ class Title(State):
     def handleInput(self, input):        
         if input.click:
             self.textEntity.updateComponent('Text',"New text boiiii")
-            # SpriteAnimationChangeSystem(self.world).execute(self.poring, 'die')                      
+            SpriteAnimationChangeSystem(self.world).execute(self.poring, 'die')
+            SpriteAnimationChangeSystem(self.world).execute(self.fillir, 'die')                      
+
             input.click = not input.click        
                                   
     # def update(self, delta_time, actions, bindings):
@@ -101,5 +103,5 @@ class Title(State):
         
         if self.poring.getComponentValue('AnimationState') == 'die':
             # Fix me later  (the 0 index for Pos)
-            # self.poring.updateComponent('Position',((75,75),0))            
+            self.poring.updateComponent('Position',((75,75),0))            
             pass
